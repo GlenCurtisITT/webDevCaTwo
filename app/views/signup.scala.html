@@ -1,0 +1,35 @@
+@main("Circle - Sign Up"){
+    <div class="row">
+		<div class="col-sm-12">
+			<div class="well">
+				<h4>Sign up to Circle</h4>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-6">
+			<div class="well">
+			  <h4>About Circle</h4>
+			</div>
+		</div>
+		<div class="col-sm-6">
+			<div class="well">
+			  <h4>Sign Up Form</h4>
+			  <form>
+				  <div class="form-group">
+					<label for="email">Email address:</label>
+					<input type="email" class="form-control" id="email">
+				  </div>
+				  <div class="form-group">
+					<label for="pwd">Password:</label>
+					<input type="password" class="form-control" id="pwd">
+				  </div>
+				  <div class="checkbox">
+					<label><input type="checkbox"> Remember me</label>
+				  </div>
+				  <a href="@routes.HomeController.profile()"><button type="submit" class="btn btn-primary">Submit</button></a>
+				</form>
+			</div>
+		</div>
+	</div>
+}
