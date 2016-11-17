@@ -1,5 +1,16 @@
 @main("Circle - About"){
     <div class="row">
+	<nav class="navbar navbar-inverse">
+			<!-- nav header/ branding -->
+			<div class="navbar-header">
+				<a class="navbar-brand" href="/">Circle</a>
+			</div>
+			<!-- List containing nav links -->
+			<ul class="nav navbar-nav">
+				<li><a href="@routes.HomeController.index()">Home</a></li></span>
+				<li class="active"><a href="@routes.HomeController.about()">About Us</a></li>
+			</ul>
+		</nav>
 		<div class="col-sm-12">
 			<div class="well">
 			  <h4>About Page</h4>

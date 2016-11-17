@@ -18,17 +18,7 @@
 	<link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/cover.css")">
     </head>
     <body>
-		<nav class="navbar navbar-inverse">
-			<!-- nav header/ branding -->
-			<div class="navbar-header">
-				<a class="navbar-brand" href="/">Circle</a>
-			</div>
-			<!-- List containing nav links -->
-			<ul class="nav navbar-nav">
-				<li @if(title == "Circle - Home Page"){class="active"}><a href="@routes.HomeController.index()">Home</a></li>
-				<li @if(title == "Circle - About"){class="active"}><a href="@routes.HomeController.about()">About Us</a></li>
-			</ul>
-		</nav>
+		
 		
         @* And here's where we render the `Html` object containing
          * the page content. *@
