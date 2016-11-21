@@ -1,47 +1,33 @@
 @main("Circle - Sign Up"){
-	<nav class="navbar navbar-inverse">
-			<!-- nav header/ branding -->
-			<div class="navbar-header">
-				<a class="navbar-brand" href="/">Circle</a>
-			</div>
-			<!-- List containing nav links -->
-			<ul class="nav navbar-nav">
-				<li><a href="@routes.HomeController.index()">Home</a></li></span>
-				<li class="active"><a href="@routes.HomeController.about()">About Us</a></li>
-			</ul>
-		</nav>
+	<div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" class="active"><a href="@routes.HomeController.index()">Home</a></li>
+            <li role="presentation"><a href="@routes.HomeController.about()">About</a></li>
+            <li role="presentation"><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">Sign-Up Page</h3>
+      </div>
+	<div class="jumbotron" style="font-size:1px">
+		<div class="row">
+			<h2 class="form-signin-heading">Create an account</h2>
+			<form> 
+			<div class="form-group">
+			<input type="email" id="inputEmail" class="form-control" placeholder="First name" required autofocus>
+			<input type="email" id="inputEmail" class="form-control" placeholder="Surname" required autofocus>
+			<input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+			<input type="email" id="inputEmail" class="form-control" placeholder="Re-enter email" required autofocus>
+			<input type="email" id="inputEmail" class="form-control" placeholder="Password" required autofocus>
+			<button class="btn btn-lg btn-success btn-block" type="submit">Create an account!</button>
+			  </form>
+		</div>
+    </div><!-- /input-group -->
 
-    <div class="row">
-		<div class="col-sm-12">
-			<div class="well">
-				<h4>Sign up to Circle</h4>
-			</div>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-sm-6">
-			<div class="well">
-			  <h4>About Circle</h4>
-			</div>
-		</div>
-		<div class="col-sm-6">
-			<div class="well">
-			  <h4>Sign Up Form</h4>
-			  <form>
-				  <div class="form-group">
-					<label for="email">Email address:</label>
-					<input type="email" class="form-control" id="email">
-				  </div>
-				  <div class="form-group">
-					<label for="pwd">Password:</label>
-					<input type="password" class="form-control" id="pwd">
-				  </div>
-				  <div class="checkbox">
-					<label><input type="checkbox"> Remember me</label>
-				  </div>
-				  <a href="@routes.HomeController.profile()"><button type="submit" class="btn btn-primary">Submit</button></a>
-				</form>
-			</div>
-		</div>
-	</div>
+    </div> <!-- /container -->
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
 }
